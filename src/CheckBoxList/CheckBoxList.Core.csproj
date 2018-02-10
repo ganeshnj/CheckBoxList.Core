@@ -6,6 +6,13 @@
     <AssemblyName>CheckBoxList.Core</AssemblyName>
     <Authors>Ganesh Narayan Jangir</Authors>
     <Company />
+    <Description>Creates a multiselection check box list based on the provided item source.</Description>
+    <PackageLicenseUrl>https://github.com/ganeshnj/CheckBoxList.Core/blob/master/LICENCE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ganeshnj/CheckBoxList.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ganeshnj/CheckBoxList.Core.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>CheckBoxList, CheckBox, ASP.NET CORE, CORE</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
