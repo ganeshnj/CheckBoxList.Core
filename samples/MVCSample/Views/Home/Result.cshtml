@@ -1,0 +1,25 @@
+﻿@model List<int>
+@{
+    ViewData["Title"] = "Result";
+}
+
+<h2>Result</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Selected Ids</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 1; i <= Model.Count; i++)
+        {
+            <tr>
+                <th scope="row">@i</th>
+                <td>@Model[i-1]</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
