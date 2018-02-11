@@ -34,6 +34,11 @@ public IActionResult Result(List<int> selectedIds)
 <check-box-list name="selectedIds" items="Model" template="Bootstrap3Basic"></check-box-list>
 ```
 
+##### _ViewImports.cshtml
+```
+@addTagHelper *, CheckBoxList.Core
+```
+
 ### Style (Optional)
 
 ```CSS
