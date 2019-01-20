@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace CheckBoxList.Core.Templates
-{ 
+{
     /// <summary>
     /// Basic template generator class used to generate basic HTML markup
     /// <inpu>
@@ -18,12 +18,13 @@ namespace CheckBoxList.Core.Templates
             {
                 string checkedValue = items[i].IsChecked ? "checked" : string.Empty;
                 string disabledValue = items[i].IsDisabled ? "disabled" : string.Empty;
-                string nameValue = name + $"[{i}]";
+                string nameValue = name;
+                string idValue = name + $"[{i}]";
                 string disabledClass = items[i].IsDisabled ? " disabled" : string.Empty;
 
                 stringBuilder.Append(
-                    $"<label class=\"checkbox{disabledClass}\" for=\"{nameValue}\">" +
-                        $"<input name=\"{nameValue}\" value=\"{items[i].Id}\" type =\"checkbox\" id=\"{nameValue}\" {checkedValue} {disabledValue}>{items[i].Title}" +
+                    $"<label class=\"checkbox{disabledClass}\" for=\"{idValue}\">" +
+                        $"<input name=\"{nameValue}\" value=\"{items[i].Id}\" type =\"checkbox\" id=\"{idValue}\" {checkedValue} {disabledValue}>{items[i].Title}" +
                     $"</label>" +
                     $"<br>"
                 );

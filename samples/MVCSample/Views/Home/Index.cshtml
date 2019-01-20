@@ -6,11 +6,10 @@
 <h2>Demo form</h2>
 
 <form class="form-horizontal" asp-action="Result" asp-controller="Home">
-    <check-box-list name="selectedIds" items="Model" template="Bootstrap3Basic"></check-box-list>
-    
     <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Submit</button>
-        </div>
+        <check-box-list name="selectedIds" items="Model" template="Bootstrap3Basic"></check-box-list>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-default">Submit</button>
     </div>
 </form>

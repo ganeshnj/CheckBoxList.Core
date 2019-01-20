@@ -18,15 +18,15 @@ namespace CheckBoxList.Core.Templates
             {
                 string checkedValue = items[i].IsChecked ? "checked" : string.Empty;
                 string disabledValue = items[i].IsDisabled ? "disabled" : string.Empty;
-                string nameValue = name + $"[{i}]";
+                string nameValue = name;
                 string disabledClass = items[i].IsDisabled ? " disabled" : string.Empty;
 
                 stringBuilder.Append(
-                    $"<label class=\"checkbox{disabledClass}\" for=\"{nameValue}\">" +
+                    $"<div class=\"checkbox{disabledClass}\">" +
                         "<label>" +
-                            $"<input name=\"{nameValue}\" value=\"{items[i].Id}\" type =\"checkbox\" id=\"{nameValue}\" {checkedValue} {disabledValue}> {items[i].Title}" +
+                            $"<input name=\"{nameValue}\" value=\"{items[i].Id}\" type=\"checkbox\" {checkedValue} {disabledValue}> {items[i].Title}" +
                         "</label>" +
-                    "</label>"
+                    "</div>"
                 );
             }
 
